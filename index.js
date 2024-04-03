@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
       <h3>${studentName}</h3>
       <h2>Certificate of Achievement</h2>
+      
       `;
     
       //  Display the modal
