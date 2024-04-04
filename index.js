@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const cardForm = document.getElementById('cardForm');
     const modal = document.getElementById('modal');
-    const closeModal = document.querySelector('.closeModal');
+    const closeModal = document.querySelector('.close');
   
     // Hide the modal initially
     modal.style.display = 'none';
@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = document.getElementById("PersonalMessage");
-      const courseNameInput = document.getElementById("CourseName"); 
+      const personalMessageInput = document.getElementById("personalMessage");
+      const courseNameInput = document.getElementById("courseName"); 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
       const courseName = courseNameInput.value; // Fallback to "a course" if no input
   
-      if (studentName.trim() === '' || personalMessage.trim() === '') {
+      if (studentName.trim() === '' || personalMessage.trim() === '' || courseName.trim() === '') {
         alert('Please fill in all fields');
         return;
       }
